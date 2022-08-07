@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+}
+
+.col-1, .col-2, .col-3 {
+  height: 100vh;
+}
+
+.row-1, .row-2, .row-3 {
+  display: none;
+}
+
+.col-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "."
+    "."
+    "."
+    "."
+    ".";
+}
+
+.col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". ."
+    ". .";
+}
+
+.col-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . ."
+    ". . . . .";
+}
+
+@media (max-width: 1200px) {
+  .col-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . "
+      ". . . "
+      ". . . "
+      ". . . "
+      ". . . "
+      ". . . "
+      ". . . "
+      ". . . "
+      ". . . "
+      ;
+  }
+}
+
+@media (max-width: 200px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row-1, .row-2, .row-3 {
+    display: unset;
+    width:100vw;
+    height: 200px;
+  }
+
+  .col-1, .col-2, .col-3 {
+    display: none;
+  }
+}
