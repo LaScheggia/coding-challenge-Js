@@ -1,37 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Problem 2 - Color Memory</title>
-    <link rel="stylesheet" href="" />
-  </head>
+<head>
+  <meta charset="UTF-8">
 
-  <body>
-    <div>
-      <div class="row">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-      </div>
-      <div class="row">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-      </div>
-      <div class="row">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-      </div>
-      <div class="row">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-      </div>
+  <title>Memory Game</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="memory-game">
+    <div class="memory-card" data-color="red">
+      <img class="front-face red" src="./img/paint-bucket.png" alt="bucket" />
+      <img class="back-face" src="./img/cat.png" alt="back-face" />
     </div>
-    
-    <script src="index.js"></script>
-  </body>
+    <div class="memory-card" data-color="red">
+      <img class="front-face red" src="./img/paint-bucket.png" alt="bucket" />
+      <img class="back-face" src="./img/cat.png" alt="back-face" />
+    </div>
+
+    <div class="memory-card" data-color="purple">
+      <img class="front-face purple" src="./img/paint-bucket.png" alt="purple" />
+      <img class="back-face" src="./img/cat.png" alt="back-face" />
+    </div>
+    <div class="memory-card" data-color="purple">
+      <img class="front-face purple" src="./img/paint-bucket.png" alt="purple" />
+      <img class="back-face" src="./img/cat.png" alt="back-face" />
+    </div>
+
+    <div class="memory-card" data-color="blue">
+      <img class="front-face blue" src="./img/paint-bucket.png" alt="blue" />
+      <img class="back-face" src="./img/cat.png" alt="back-face" />
+    </div>
+    <div class="memory-card" data-color="blue">
+      <img class="front-face blue" src="./img/paint-bucket.png" alt="blue" />
+      <img class="back-face" src="./img/cat.png" alt="back-face" />
+    </div>
+
+    <div class="memory-card" data-color="teal">
+      <img class="front-face teal" src="./img/paint-bucket.png" alt="teal" />
+      <img class="back-face" src="./img/cat.png" alt="back-face" />
+    </div>
+    <div class="memory-card" data-color="teal">
+      <img class="front-face teal" src="./img/paint-bucket.png" alt="teal" />
+      <img class="back-face" src="./img/cat.png" alt="back-face" />
+    </div>
+
+    <div class="memory-card" data-color="green">
+      <img class="front-face green" src="./img/paint-bucket.png" alt="green" />
+      <img class="back-face" src="./img/cat.png" alt="back-face" />
+    </div>
+    <div class="memory-card" data-color="green">
+      <img class="front-face green" src="./img/paint-bucket.png" alt="green" />
+      <img class="back-face" src="./img/cat.png" alt="back-face" />
+    </div>
+
+    <div class="memory-card" data-color="orange">
+      <img class="front-face orange" src="./img/paint-bucket.png" alt="orange" />
+      <img class="back-face" src="./img/cat.png" alt="back-face" />
+    </div>
+    <div class="memory-card" data-color="orange">
+      <img class="front-face orange" src="./img/paint-bucket.png" alt="orange" />
+      <img class="back-face" src="./img/cat.png" alt="back-face" />
+    </div>
+  </section>
+
+  <script src="index.js"></script>
+</body>
 </html>
